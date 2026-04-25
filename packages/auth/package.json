@@ -1,0 +1,20 @@
+{
+  "name": "@repo/auth",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    "./server/get-session": "./src/server/get-session.ts",
+    "./server/require-user": "./src/server/require-user.ts",
+    "./types": "./src/types.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@repo/api-contracts": "workspace:*"
+  },
+  "devDependencies": {
+    "@repo/config": "workspace:*",
+    "typescript": "^5.7.3"
+  }
+}

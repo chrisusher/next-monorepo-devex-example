@@ -1,0 +1,20 @@
+{
+  "name": "@repo/utils",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    "./date": "./src/date.ts",
+    "./object": "./src/object.ts",
+    "./currency": "./src/currency.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:unit": "vitest run"
+  },
+  "devDependencies": {
+    "@repo/config": "workspace:*",
+    "typescript": "^5.7.3",
+    "vitest": "^2.1.8"
+  }
+}

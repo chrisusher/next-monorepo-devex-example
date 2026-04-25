@@ -1,0 +1,19 @@
+{
+  "name": "@repo/api-client",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    "./projects": "./src/projects/index.ts",
+    "./users": "./src/users/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@repo/api-contracts": "workspace:*"
+  },
+  "devDependencies": {
+    "@repo/config": "workspace:*",
+    "typescript": "^5.7.3"
+  }
+}

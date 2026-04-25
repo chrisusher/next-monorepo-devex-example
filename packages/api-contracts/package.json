@@ -1,0 +1,22 @@
+{
+  "name": "@repo/api-contracts",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    "./projects": "./src/projects.ts",
+    "./users": "./src/users.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:unit": "vitest run"
+  },
+  "dependencies": {
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@repo/config": "workspace:*",
+    "typescript": "^5.7.3",
+    "vitest": "^2.1.8"
+  }
+}
