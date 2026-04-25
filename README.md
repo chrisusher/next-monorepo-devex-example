@@ -21,7 +21,7 @@ This repo shows a structure that avoids all of these problems from day one.
 ```text
 .
 ├── apps/
-│   └── web/                       # Next.js 15 App Router application
+│   └── web/                       # Next.js 16 App Router application
 │       ├── app/
 │       │   ├── api/
 │       │   │   ├── me/route.ts

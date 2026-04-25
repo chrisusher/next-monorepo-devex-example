@@ -6,15 +6,12 @@ const nextConfig: NextConfig = {
   // the Next.js module graph small in a monorepo.
   transpilePackages: ['@repo/ui'],
 
-  // Opt in to Turbopack for faster local dev.
-  // Remove this line if you hit Turbopack-specific issues.
-  // turbopack: {},
+  // In Next.js 16, Turbopack is the stable default for `next dev`.
+  // Use `next dev --webpack` if you need to fall back to webpack.
 
-  experimental: {
-    // Restricts Server Components to only importing server-safe code.
-    // Helps catch accidental client/server boundary violations early.
-    serverComponentsExternalPackages: [],
-  },
+  // Restricts Server Components to only importing server-safe packages.
+  // Helps catch accidental client/server boundary violations early.
+  serverExternalPackages: [],
 }
 
 export default nextConfig
