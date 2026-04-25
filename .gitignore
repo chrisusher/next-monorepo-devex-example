@@ -141,3 +141,15 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# Turbo
+.turbo
+
+# Test coverage
+coverage
+
+# pnpm
+.pnpm-store
+
+# TypeScript build info
+*.tsbuildinfo
